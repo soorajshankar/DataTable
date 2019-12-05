@@ -1,17 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Table from "./Table";
+import getData, { columns } from "./Constants/data";
 
 function App() {
-  return <Table data={getData(5000)} />;
+  return (
+    <Table
+      data={getData(5000)}
+      columns={columns}
+      onRowClick={(rowData, rowIndex) => {}}
+    />
+  );
 }
-const getData = size => {
-  let data = [];
-  for (let i = 0; i <= size; i++) {
-    data.push({ id: i, name: `${i} Guy` });
-  }
-  return data;
-};
 
 export default App;
