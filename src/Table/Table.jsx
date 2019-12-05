@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export const Li = ({ i, ri, columns, onChange, selectedItems }) => {
   columns = [{ label: "_checkbox" }, ...columns];
-  console.log(selectedItems, selectedItems.has(i._id), i._id);
+  // debugger
   return (
     <tr>
       {columns.map((c, ci) => {
@@ -14,13 +14,12 @@ export const Li = ({ i, ri, columns, onChange, selectedItems }) => {
               checked={selectedItems.has(i._id)}
             />
           ) : (
-            i[c.id]
-          ); // (React.ReactNode | string | number),
+            i[c.id] // (React.ReactNode | string | number),
+          );
 
         return (
           <td
             key={`${ci}-${ri}`}
-            // className="c-child child "
             {...{
               ...(c.numeric && { align: "right" })
             }}
@@ -32,14 +31,21 @@ export const Li = ({ i, ri, columns, onChange, selectedItems }) => {
     </tr>
   );
 };
-export const renderColumns = columns => {
+export const renderColumns = (columns, onChange, selectedItems) => {
   columns = [{ label: "_checkbox", width: "20px" }, ...columns];
   return columns.map(({ label = "", numeric = false, width }, ci) => {
-    const renderer = label === "_checkbox" ? <input type="checkbox" /> : label;
+    const renderer =
+      label === "_checkbox" ? (
+        <input
+          type="checkbox"
+          onChange={e => onChange(e.target.checked, selectedItems)}
+        />
+      ) : (
+        label
+      );
     return (
       <th
         key={ci}
-        // className="c-child child "
         {...{
           ...(numeric && { align: "right" })
         }}
@@ -56,9 +62,8 @@ export const renderColGroups = columns => {
       {columns.map(({ label = "", numeric = false, width = "10%" }, ci) => {
         return (
           <col
-            //
             style={{
-              backgroundColor: "yellow",
+              backgroundColor: "yellow", // testing colgroup 
               width: width,
               minWidth: width
             }}
@@ -130,7 +135,7 @@ const Table = ({
     const newSelectedItems = new Set(selectedItems);
     checked ? newSelectedItems.add(_id) : newSelectedItems.delete(_id);
     setSelectedItems(newSelectedItems);
-    onSelectionChange(newSelectedItems);
+    onSelectionChange([...newSelectedItems.values()]);
   };
   const onScroll = e => {
     window.ee = { ...e };
@@ -146,16 +151,29 @@ const Table = ({
       set(getPrevArray({ size: 30, current, data }));
     } else if (o.offsetHeight + o.scrollTop >= o.scrollHeight) {
       // direct window sliding next window
-      console.log("bottom");
       set(getArray({ size: 30, current, data }));
     }
+  };
+  const onSelectAll = (checked, selectedItems) => {
+    // for better performance instead of looping creating an array of index with size same as data array
+    if (!checked) {
+      onSelectionChange([]);
+      return setSelectedItems(new Set());
+    }
+    // else add everything to selected set
+    let selectedSet = new Set();
+    for (let i = 0; i < data.length; i++) {
+      selectedSet.add(i);
+    }
+    onSelectionChange("ALL");
+    setSelectedItems(selectedSet);
   };
   return (
     <div className="vir-table">
       <div className="vir-table-header">
         <table>
           {renderColGroups(columns)}
-          <thead>{renderColumns(columns)}</thead>
+          <thead>{renderColumns(columns, onSelectAll, selectedItems)}</thead>
         </table>
       </div>
       <div
