@@ -1,7 +1,7 @@
 html,
 body,
 #root {
-  height: 500px;
+  height: 100%;
 }
 .vir-table {
   height: 100%;
@@ -15,6 +15,9 @@ body,
 .vir-table-body table {
   width: 100%;
   table-layout: fixed;
+}
+.vir-table-body table tbody tr :hover {
+  background-color: rgb(230, 247, 255);
 }
 .vir-table-body {
   max-height: 100%;

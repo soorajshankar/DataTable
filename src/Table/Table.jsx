@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-export const Li = ({ i, ri, columns, onChange, selectedItems }) => {
+export const Li = ({
+  i,
+  ri,
+  columns,
+  onChange,
+  selectedItems,
+  onClick = i => console.log(i)
+}) => {
   columns = [{ label: "_checkbox" }, ...columns];
   // debugger
   return (
@@ -23,6 +30,7 @@ export const Li = ({ i, ri, columns, onChange, selectedItems }) => {
             {...{
               ...(c.numeric && { align: "right" })
             }}
+            onClick={() => onClick(i)}
           >
             {renderer}
           </td>
@@ -55,7 +63,7 @@ export const renderColumns = (columns, onChange, selectedItems) => {
     );
   });
 };
-export const renderColGroups = columns => {
+export const renderColGroups = (columns, isHeader) => {
   columns = [{ label: "_checkbox", width: "20px" }, ...columns];
   return (
     <colgroup>
@@ -63,7 +71,7 @@ export const renderColGroups = columns => {
         return (
           <col
             style={{
-              backgroundColor: "yellow", // testing colgroup 
+              backgroundColor: isHeader ? "#fafafa" : "#ffffff", // testing colgroup
               width: width,
               minWidth: width
             }}
@@ -122,7 +130,16 @@ const Table = ({
   data = [],
   columns = [],
   maxHeight = 250,
-  onSelectionChange = items => console.log(items)
+  onSelectionChange = items =>
+    console.debug(
+      "Please provide onRowClick prop to table property to access selection event",
+      items
+    ),
+  onRowClick = item =>
+    console.debug(
+      "Please provide onRowClick prop to table property to access row click event",
+      item
+    )
 }) => {
   const [current, set] = useState([]);
   const [selectedItems, setSelectedItems] = useState();
@@ -172,7 +189,7 @@ const Table = ({
     <div className="vir-table">
       <div className="vir-table-header">
         <table>
-          {renderColGroups(columns)}
+          {renderColGroups(columns, true)}
           <thead>{renderColumns(columns, onSelectAll, selectedItems)}</thead>
         </table>
       </div>
@@ -186,7 +203,17 @@ const Table = ({
           {/* {renderColGroups(columns)} */}
           <tbody>
             {current.map((i, ri) => (
-              <Li key={i.id} {...{ i, ri, columns, onChange, selectedItems }} />
+              <Li
+                key={i.id}
+                {...{
+                  i,
+                  ri,
+                  columns,
+                  onChange,
+                  selectedItems,
+                  onClick: onRowClick
+                }}
+              />
             ))}
           </tbody>
         </table>

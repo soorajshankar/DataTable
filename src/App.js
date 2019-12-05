@@ -6,9 +6,14 @@ import getData, { columns } from "./Constants/data";
 function App() {
   return (
     <Table
-      data={getData(5000)}
+      data={getData(500000)}
       columns={columns}
-      onRowClick={(rowData, rowIndex) => {}}
+      onRowClick={item => {
+        console.log(item);
+      }}
+      onSelectionChange={selection => {
+        console.log(selection);
+      }}
     />
   );
 }
