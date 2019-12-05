@@ -17,123 +17,9 @@ initialize {
             "children": Array [
               Object {
                 "attribs": Object {},
-                "children": Array [],
-                "name": "col",
-                "namespace": "http://www.w3.org/1999/xhtml",
-                "next": null,
-                "parent": [Circular],
-                "prev": null,
-                "type": "tag",
-                "x-attribsNamespace": Object {},
-                "x-attribsPrefix": Object {},
-              },
-            ],
-            "name": "colgroup",
-            "namespace": "http://www.w3.org/1999/xhtml",
-            "next": Object {
-              "attribs": Object {},
-              "children": Array [
-                Object {
-                  "attribs": Object {
-                    "class": "table-row",
-                  },
-                  "children": Array [
-                    Object {
-                      "attribs": Object {
-                        "class": "c-child child ",
-                      },
-                      "children": Array [
-                        Object {
-                          "attribs": Object {
-                            "type": "checkbox",
-                          },
-                          "children": Array [],
-                          "name": "input",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "next": null,
-                          "parent": [Circular],
-                          "prev": null,
-                          "type": "tag",
-                          "x-attribsNamespace": Object {
-                            "type": undefined,
-                          },
-                          "x-attribsPrefix": Object {
-                            "type": undefined,
-                          },
-                        },
-                      ],
-                      "name": "td",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "next": null,
-                      "parent": [Circular],
-                      "prev": null,
-                      "type": "tag",
-                      "x-attribsNamespace": Object {
-                        "class": undefined,
-                      },
-                      "x-attribsPrefix": Object {
-                        "class": undefined,
-                      },
-                    },
-                  ],
-                  "name": "tr",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "next": null,
-                  "parent": [Circular],
-                  "prev": null,
-                  "type": "tag",
-                  "x-attribsNamespace": Object {
-                    "class": undefined,
-                  },
-                  "x-attribsPrefix": Object {
-                    "class": undefined,
-                  },
-                },
-              ],
-              "name": "thead",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "next": Object {
-                "attribs": Object {
-                  "class": "c-container",
-                },
-                "children": Array [],
-                "name": "tbody",
-                "namespace": "http://www.w3.org/1999/xhtml",
-                "next": null,
-                "parent": [Circular],
-                "prev": [Circular],
-                "type": "tag",
-                "x-attribsNamespace": Object {
-                  "class": undefined,
-                },
-                "x-attribsPrefix": Object {
-                  "class": undefined,
-                },
-              },
-              "parent": [Circular],
-              "prev": [Circular],
-              "type": "tag",
-              "x-attribsNamespace": Object {},
-              "x-attribsPrefix": Object {},
-            },
-            "parent": [Circular],
-            "prev": null,
-            "type": "tag",
-            "x-attribsNamespace": Object {},
-            "x-attribsPrefix": Object {},
-          },
-          Object {
-            "attribs": Object {},
-            "children": Array [
-              Object {
-                "attribs": Object {
-                  "class": "table-row",
-                },
                 "children": Array [
                   Object {
-                    "attribs": Object {
-                      "class": "c-child child ",
-                    },
+                    "attribs": Object {},
                     "children": Array [
                       Object {
                         "attribs": Object {
@@ -160,12 +46,8 @@ initialize {
                     "parent": [Circular],
                     "prev": null,
                     "type": "tag",
-                    "x-attribsNamespace": Object {
-                      "class": undefined,
-                    },
-                    "x-attribsPrefix": Object {
-                      "class": undefined,
-                    },
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
                   },
                 ],
                 "name": "tr",
@@ -174,20 +56,14 @@ initialize {
                 "parent": [Circular],
                 "prev": null,
                 "type": "tag",
-                "x-attribsNamespace": Object {
-                  "class": undefined,
-                },
-                "x-attribsPrefix": Object {
-                  "class": undefined,
-                },
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
               },
             ],
             "name": "thead",
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": Object {
-              "attribs": Object {
-                "class": "c-container",
-              },
+              "attribs": Object {},
               "children": Array [],
               "name": "tbody",
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -195,47 +71,17 @@ initialize {
               "parent": [Circular],
               "prev": [Circular],
               "type": "tag",
-              "x-attribsNamespace": Object {
-                "class": undefined,
-              },
-              "x-attribsPrefix": Object {
-                "class": undefined,
-              },
-            },
-            "parent": [Circular],
-            "prev": Object {
-              "attribs": Object {},
-              "children": Array [
-                Object {
-                  "attribs": Object {},
-                  "children": Array [],
-                  "name": "col",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "next": null,
-                  "parent": [Circular],
-                  "prev": null,
-                  "type": "tag",
-                  "x-attribsNamespace": Object {},
-                  "x-attribsPrefix": Object {},
-                },
-              ],
-              "name": "colgroup",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "next": [Circular],
-              "parent": [Circular],
-              "prev": null,
-              "type": "tag",
               "x-attribsNamespace": Object {},
               "x-attribsPrefix": Object {},
             },
+            "parent": [Circular],
+            "prev": null,
             "type": "tag",
             "x-attribsNamespace": Object {},
             "x-attribsPrefix": Object {},
           },
           Object {
-            "attribs": Object {
-              "class": "c-container",
-            },
+            "attribs": Object {},
             "children": Array [],
             "name": "tbody",
             "namespace": "http://www.w3.org/1999/xhtml",
@@ -245,14 +91,10 @@ initialize {
               "attribs": Object {},
               "children": Array [
                 Object {
-                  "attribs": Object {
-                    "class": "table-row",
-                  },
+                  "attribs": Object {},
                   "children": Array [
                     Object {
-                      "attribs": Object {
-                        "class": "c-child child ",
-                      },
+                      "attribs": Object {},
                       "children": Array [
                         Object {
                           "attribs": Object {
@@ -279,12 +121,8 @@ initialize {
                       "parent": [Circular],
                       "prev": null,
                       "type": "tag",
-                      "x-attribsNamespace": Object {
-                        "class": undefined,
-                      },
-                      "x-attribsPrefix": Object {
-                        "class": undefined,
-                      },
+                      "x-attribsNamespace": Object {},
+                      "x-attribsPrefix": Object {},
                     },
                   ],
                   "name": "tr",
@@ -293,54 +131,22 @@ initialize {
                   "parent": [Circular],
                   "prev": null,
                   "type": "tag",
-                  "x-attribsNamespace": Object {
-                    "class": undefined,
-                  },
-                  "x-attribsPrefix": Object {
-                    "class": undefined,
-                  },
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
                 },
               ],
               "name": "thead",
               "namespace": "http://www.w3.org/1999/xhtml",
               "next": [Circular],
               "parent": [Circular],
-              "prev": Object {
-                "attribs": Object {},
-                "children": Array [
-                  Object {
-                    "attribs": Object {},
-                    "children": Array [],
-                    "name": "col",
-                    "namespace": "http://www.w3.org/1999/xhtml",
-                    "next": null,
-                    "parent": [Circular],
-                    "prev": null,
-                    "type": "tag",
-                    "x-attribsNamespace": Object {},
-                    "x-attribsPrefix": Object {},
-                  },
-                ],
-                "name": "colgroup",
-                "namespace": "http://www.w3.org/1999/xhtml",
-                "next": [Circular],
-                "parent": [Circular],
-                "prev": null,
-                "type": "tag",
-                "x-attribsNamespace": Object {},
-                "x-attribsPrefix": Object {},
-              },
+              "prev": null,
               "type": "tag",
               "x-attribsNamespace": Object {},
               "x-attribsPrefix": Object {},
             },
             "type": "tag",
-            "x-attribsNamespace": Object {
-              "class": undefined,
-            },
-            "x-attribsPrefix": Object {
-              "class": undefined,
-            },
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
           },
         ],
         "name": "table",

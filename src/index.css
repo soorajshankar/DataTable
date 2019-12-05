@@ -1,37 +1,21 @@
 html,
 body,
 #root {
+  height: 500px;
+}
+.vir-table {
   height: 100%;
 }
-
-.App {
-  display: flex;
-  height: calc(100vh - 20px);
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
+.vir-table-header th,
+.vir-table-body td {
+  min-height: 20px;
+  padding: 25px;
 }
-.child {
-  border: solid 1px grey;
-  padding: 10px;
-  margin: 5px 0px;
-  flex: auto;
-}
-.c-container {
-  max-height: 500px;
+.vir-table-header table,
+.vir-table-body table {
   width: 100%;
-  overflow: auto;
-  scroll-behavior: smooth;
+  table-layout: fixed;
 }
-.table-row {
-  display: flex;
-  flex-direction: row;
-}
-tbody {
-  display: block;
-  position: relative;
-  width: 100%;
-  overflow-y: scroll;
-  /* Decoration */
-  /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
+.vir-table-body {
+  max-height: 100%;
 }

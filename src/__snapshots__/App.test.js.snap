@@ -11,51 +11,30 @@ Object {
         <table
           style="table-layout: fixed;"
         >
-          <colgroup>
-            <col />
-            <col />
-            <col />
-            <col />
-          </colgroup>
           <thead>
-            <tr
-              class="table-row"
+            <td>
+              <input
+                type="checkbox"
+              />
+            </td>
+            <td
+              align="right"
+              width="100px"
             >
-              <td
-                class="c-child child "
-              >
-                <input
-                  type="checkbox"
-                />
-              </td>
-              <td
-                align="right"
-                class="c-child child "
-                width="100px"
-              >
-                ID
-              </td>
-              <td
-                class="c-child child "
-              >
-                NAME
-              </td>
-              <td
-                align="right"
-                class="c-child child "
-              >
-                IID
-              </td>
-            </tr>
+              ID
+            </td>
+            <td>
+              NAME
+            </td>
+            <td
+              align="right"
+            >
+              IID
+            </td>
           </thead>
-          <tbody
-            class="c-container"
-          >
-            <tr
-              class="table-row"
-            >
+          <tbody>
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -64,28 +43,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 0
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 0 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 0
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -94,28 +66,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 1
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 1 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 1
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -124,28 +89,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 2
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 2 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 2
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -154,28 +112,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 3
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 3 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 3
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -184,28 +135,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 4
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 4 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 4
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -214,28 +158,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 5
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 5 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 5
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -244,28 +181,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 6
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 6 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 6
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -274,28 +204,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 7
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 7 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 7
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -304,28 +227,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 8
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 8 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 8
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -334,28 +250,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 9
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 9 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 9
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -364,28 +273,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 10
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 10 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 10
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -394,28 +296,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 11
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 11 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 11
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -424,28 +319,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 12
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 12 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 12
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -454,28 +342,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 13
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 13 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 13
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -484,28 +365,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 14
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 14 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 14
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -514,28 +388,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 15
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 15 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 15
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -544,28 +411,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 16
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 16 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 16
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -574,28 +434,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 17
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 17 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 17
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -604,28 +457,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 18
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 18 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 18
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -634,28 +480,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 19
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 19 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 19
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -664,28 +503,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 20
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 20 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 20
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -694,28 +526,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 21
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 21 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 21
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -724,28 +549,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 22
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 22 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 22
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -754,28 +572,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 23
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 23 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 23
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -784,28 +595,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 24
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 24 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 24
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -814,28 +618,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 25
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 25 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 25
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -844,28 +641,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 26
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 26 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 26
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -874,28 +664,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 27
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 27 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 27
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -904,28 +687,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 28
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 28 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 28
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -934,28 +710,21 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 29
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 29 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 29
               </td>
             </tr>
-            <tr
-              class="table-row"
-            >
+            <tr>
               <td
-                class="c-child child "
                 width="10px"
               >
                 <input
@@ -964,19 +733,15 @@ Object {
               </td>
               <td
                 align="right"
-                class="c-child child "
                 width="100px"
               >
                 30
               </td>
-              <td
-                class="c-child child "
-              >
+              <td>
                 30 Guy
               </td>
               <td
                 align="right"
-                class="c-child child "
               >
                 30
               </td>
@@ -993,51 +758,30 @@ Object {
       <table
         style="table-layout: fixed;"
       >
-        <colgroup>
-          <col />
-          <col />
-          <col />
-          <col />
-        </colgroup>
         <thead>
-          <tr
-            class="table-row"
+          <td>
+            <input
+              type="checkbox"
+            />
+          </td>
+          <td
+            align="right"
+            width="100px"
           >
-            <td
-              class="c-child child "
-            >
-              <input
-                type="checkbox"
-              />
-            </td>
-            <td
-              align="right"
-              class="c-child child "
-              width="100px"
-            >
-              ID
-            </td>
-            <td
-              class="c-child child "
-            >
-              NAME
-            </td>
-            <td
-              align="right"
-              class="c-child child "
-            >
-              IID
-            </td>
-          </tr>
+            ID
+          </td>
+          <td>
+            NAME
+          </td>
+          <td
+            align="right"
+          >
+            IID
+          </td>
         </thead>
-        <tbody
-          class="c-container"
-        >
-          <tr
-            class="table-row"
-          >
+        <tbody>
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1046,28 +790,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               0
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               0 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               0
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1076,28 +813,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               1
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               1 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               1
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1106,28 +836,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               2
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               2 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               2
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1136,28 +859,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               3
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               3 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               3
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1166,28 +882,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               4
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               4 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               4
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1196,28 +905,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               5
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               5 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               5
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1226,28 +928,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               6
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               6 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               6
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1256,28 +951,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               7
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               7 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               7
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1286,28 +974,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               8
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               8 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               8
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1316,28 +997,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               9
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               9 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               9
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1346,28 +1020,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               10
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               10 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               10
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1376,28 +1043,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               11
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               11 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               11
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1406,28 +1066,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               12
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               12 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               12
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1436,28 +1089,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               13
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               13 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               13
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1466,28 +1112,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               14
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               14 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               14
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1496,28 +1135,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               15
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               15 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               15
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1526,28 +1158,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               16
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               16 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               16
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1556,28 +1181,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               17
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               17 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               17
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1586,28 +1204,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               18
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               18 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               18
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1616,28 +1227,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               19
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               19 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               19
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1646,28 +1250,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               20
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               20 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               20
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1676,28 +1273,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               21
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               21 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               21
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1706,28 +1296,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               22
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               22 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               22
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1736,28 +1319,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               23
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               23 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               23
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1766,28 +1342,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               24
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               24 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               24
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1796,28 +1365,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               25
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               25 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               25
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1826,28 +1388,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               26
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               26 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               26
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1856,28 +1411,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               27
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               27 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               27
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1886,28 +1434,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               28
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               28 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               28
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1916,28 +1457,21 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               29
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               29 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               29
             </td>
           </tr>
-          <tr
-            class="table-row"
-          >
+          <tr>
             <td
-              class="c-child child "
               width="10px"
             >
               <input
@@ -1946,19 +1480,15 @@ Object {
             </td>
             <td
               align="right"
-              class="c-child child "
               width="100px"
             >
               30
             </td>
-            <td
-              class="c-child child "
-            >
+            <td>
               30 Guy
             </td>
             <td
               align="right"
-              class="c-child child "
             >
               30
             </td>

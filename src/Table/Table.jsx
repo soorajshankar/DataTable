@@ -1,20 +1,28 @@
 import React, { useState, useEffect } from "react";
 
-export const Li = ({ i, ri, columns }) => {
-  columns = [{ label: "_checkbox", width: "10px" }, ...columns];
+export const Li = ({ i, ri, columns, onChange, selectedItems }) => {
+  columns = [{ label: "_checkbox" }, ...columns];
+  console.log(selectedItems, selectedItems.has(i._id), i._id);
   return (
-    <tr className="table-row">
+    <tr>
       {columns.map((c, ci) => {
         const renderer =
-          c.label === "_checkbox" ? <input type="checkbox" /> : i[c.id]; // (React.ReactNode | string | number),
+          c.label === "_checkbox" ? (
+            <input
+              type="checkbox"
+              onChange={e => onChange(i, e.target.checked, selectedItems)}
+              checked={selectedItems.has(i._id)}
+            />
+          ) : (
+            i[c.id]
+          ); // (React.ReactNode | string | number),
 
         return (
           <td
             key={`${ci}-${ri}`}
-            className="c-child child "
+            // className="c-child child "
             {...{
-              ...(c.numeric && { align: "right" }),
-              ...(c.width && { width: c.width })
+              ...(c.numeric && { align: "right" })
             }}
           >
             {renderer}
@@ -25,28 +33,37 @@ export const Li = ({ i, ri, columns }) => {
   );
 };
 export const renderColumns = columns => {
-  columns = [{ label: "_checkbox" }, ...columns];
+  columns = [{ label: "_checkbox", width: "20px" }, ...columns];
   return columns.map(({ label = "", numeric = false, width }, ci) => {
     const renderer = label === "_checkbox" ? <input type="checkbox" /> : label;
     return (
-      <td
+      <th
         key={ci}
-        className="c-child child "
-        {...{ ...(numeric && { align: "right" }), ...(width && { width }) }}
+        // className="c-child child "
+        {...{
+          ...(numeric && { align: "right" })
+        }}
       >
         {renderer}
-      </td>
+      </th>
     );
   });
 };
 export const renderColGroups = columns => {
-  columns = [{ label: "_checkbox" }, ...columns];
+  columns = [{ label: "_checkbox", width: "20px" }, ...columns];
   return (
     <colgroup>
-      {columns.map(({ label = "", numeric = false, width }, ci) => {
-        const renderer =
-          label === "_checkbox" ? <input type="checkbox" /> : label;
-        return <col></col>;
+      {columns.map(({ label = "", numeric = false, width = "10%" }, ci) => {
+        return (
+          <col
+            //
+            style={{
+              backgroundColor: "yellow",
+              width: width,
+              minWidth: width
+            }}
+          ></col>
+        );
       })}
     </colgroup>
   );
@@ -96,11 +113,25 @@ export const getPrevArray = ({ size = 10, current = [], data }) => {
   }
   return [...newState];
 };
-const Table = ({ data = [], columns = [] }) => {
+const Table = ({
+  data = [],
+  columns = [],
+  maxHeight = 250,
+  onSelectionChange = items => console.log(items)
+}) => {
   const [current, set] = useState([]);
+  const [selectedItems, setSelectedItems] = useState();
   useEffect(() => {
     set(getArray({ size: 30, current: [], data }));
+    setSelectedItems(new Set());
   }, []);
+  const onChange = ({ _id }, checked, selectedItems) => {
+    // todo
+    const newSelectedItems = new Set(selectedItems);
+    checked ? newSelectedItems.add(_id) : newSelectedItems.delete(_id);
+    setSelectedItems(newSelectedItems);
+    onSelectionChange(newSelectedItems);
+  };
   const onScroll = e => {
     window.ee = { ...e };
     let o = e.target;
@@ -120,18 +151,28 @@ const Table = ({ data = [], columns = [] }) => {
     }
   };
   return (
-    <div className="App">
-      <table style={{ tableLayout: "fixed" }}>
-        {renderColGroups(columns)}
-        <thead>
-          <tr className="table-row">{renderColumns(columns)}</tr>
-        </thead>
-        <tbody className="c-container" onScroll={onScroll}>
-          {current.map((i, ri) => (
-            <Li key={i.id} {...{ i, ri, columns }} />
-          ))}
-        </tbody>
-      </table>
+    <div className="vir-table">
+      <div className="vir-table-header">
+        <table>
+          {renderColGroups(columns)}
+          <thead>{renderColumns(columns)}</thead>
+        </table>
+      </div>
+      <div
+        style={{ maxHeight, overflow: "auto" }}
+        className="vir-table-body"
+        onScroll={onScroll}
+      >
+        <table>
+          {renderColGroups(columns)}
+          {/* {renderColGroups(columns)} */}
+          <tbody>
+            {current.map((i, ri) => (
+              <Li key={i.id} {...{ i, ri, columns, onChange, selectedItems }} />
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
