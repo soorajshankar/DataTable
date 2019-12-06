@@ -72,6 +72,7 @@ export const renderColGroups = (columns, isHeader) => {
       {columns.map(({ label = "", numeric = false, width = "10%" }, ci) => {
         return (
           <col
+            key={ci}
             style={{
               backgroundColor: isHeader ? "#fafafa" : "#ffffff", // testing colgroup
               width: width,
@@ -192,7 +193,9 @@ const Table = ({
       <div className="vir-table-header">
         <table>
           {renderColGroups(columns, true)}
-          <thead>{renderColumns(columns, onSelectAll, selectedItems)}</thead>
+          <thead>
+            <tr>{renderColumns(columns, onSelectAll, selectedItems)}</tr>
+          </thead>
         </table>
       </div>
       <div

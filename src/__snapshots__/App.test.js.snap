@@ -37,24 +37,26 @@ Object {
                   />
                 </colgroup>
                 <thead>
-                  <th>
-                    <input
-                      type="checkbox"
-                    />
-                  </th>
-                  <th
-                    align="right"
-                  >
-                    ID
-                  </th>
-                  <th>
-                    NAME
-                  </th>
-                  <th
-                    align="right"
-                  >
-                    IID
-                  </th>
+                  <tr>
+                    <th>
+                      <input
+                        type="checkbox"
+                      />
+                    </th>
+                    <th
+                      align="right"
+                    >
+                      ID
+                    </th>
+                    <th>
+                      NAME
+                    </th>
+                    <th
+                      align="right"
+                    >
+                      IID
+                    </th>
+                  </tr>
                 </thead>
               </table>
             </div>
@@ -749,24 +751,26 @@ Object {
                 />
               </colgroup>
               <thead>
-                <th>
-                  <input
-                    type="checkbox"
-                  />
-                </th>
-                <th
-                  align="right"
-                >
-                  ID
-                </th>
-                <th>
-                  NAME
-                </th>
-                <th
-                  align="right"
-                >
-                  IID
-                </th>
+                <tr>
+                  <th>
+                    <input
+                      type="checkbox"
+                    />
+                  </th>
+                  <th
+                    align="right"
+                  >
+                    ID
+                  </th>
+                  <th>
+                    NAME
+                  </th>
+                  <th
+                    align="right"
+                  >
+                    IID
+                  </th>
+                </tr>
               </thead>
             </table>
           </div>

@@ -6,18 +6,14 @@ const initialState = { data: [], loading: true };
 
 const ApiTable = props => {
   const [data, setData] = useState(initialState);
-  useEffect(async () => {
-    let url = "https://jsonplaceholder.typicode.com/photos";
-    let response = await fetch(url);
+  const fetchData = () => {
+    fetch("https://jsonplaceholder.typicode.com/photos")
+      .then(resp => resp.json())
+      .then(data => setData({ data, loading: false }));
+  };
 
-    if (response.ok) {
-      // if HTTP-status is 200-299
-      // get the response body (the method explained below)
-      let data = await response.json();
-      setData({ data, loading: false });
-    } else {
-      alert("HTTP-Error: " + response.status);
-    }
+  useEffect(() => {
+    fetchData();
   }, []);
 
   return (
