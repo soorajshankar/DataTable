@@ -20,9 +20,11 @@ export const Li = ({
               onChange={e => onChange(i, e.target.checked, selectedItems)}
               checked={selectedItems.has(i._id)}
             />
+          ) : c.renderer ? (
+            c.renderer(i[c.id])
           ) : (
-            i[c.id] // (React.ReactNode | string | number),
-          );
+            i[c.id]
+          ); // (React.ReactNode | string | number),
 
         return (
           <td
@@ -129,7 +131,7 @@ export const getPrevArray = ({ size = 10, current = [], data }) => {
 const Table = ({
   data = [],
   columns = [],
-  maxHeight = 250,
+  height = 250,
   onSelectionChange = items =>
     console.debug(
       "Please provide onRowClick prop to table property to access selection event",
@@ -194,7 +196,7 @@ const Table = ({
         </table>
       </div>
       <div
-        style={{ maxHeight, overflow: "auto" }}
+        style={{ maxHeight: height, overflow: "auto" }}
         className="vir-table-body"
         onScroll={onScroll}
       >
