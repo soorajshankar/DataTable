@@ -16,7 +16,7 @@ body,
   width: 100%;
   table-layout: fixed;
 }
-.vir-table-body table tbody tr :hover {
+.vir-table-body tr :hover {
   background-color: rgb(230, 247, 255);
 }
 .vir-table-body {

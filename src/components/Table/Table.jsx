@@ -20,9 +20,11 @@ export const Li = ({
               onChange={e => onChange(i, e.target.checked, selectedItems)}
               checked={selectedItems.has(i._id)}
             />
+          ) : c.renderer ? (
+            c.renderer(i[c.id])
           ) : (
-            i[c.id] // (React.ReactNode | string | number),
-          );
+            i[c.id]
+          ); // (React.ReactNode | string | number),
 
         return (
           <td
@@ -70,6 +72,7 @@ export const renderColGroups = (columns, isHeader) => {
       {columns.map(({ label = "", numeric = false, width = "10%" }, ci) => {
         return (
           <col
+            key={ci}
             style={{
               backgroundColor: isHeader ? "#fafafa" : "#ffffff", // testing colgroup
               width: width,
@@ -129,7 +132,7 @@ export const getPrevArray = ({ size = 10, current = [], data }) => {
 const Table = ({
   data = [],
   columns = [],
-  maxHeight = 250,
+  height = 250,
   onSelectionChange = items =>
     console.debug(
       "Please provide onRowClick prop to table property to access selection event",
@@ -190,11 +193,13 @@ const Table = ({
       <div className="vir-table-header">
         <table>
           {renderColGroups(columns, true)}
-          <thead>{renderColumns(columns, onSelectAll, selectedItems)}</thead>
+          <thead>
+            <tr>{renderColumns(columns, onSelectAll, selectedItems)}</tr>
+          </thead>
         </table>
       </div>
       <div
-        style={{ maxHeight, overflow: "auto" }}
+        style={{ maxHeight: height, overflow: "auto" }}
         className="vir-table-body"
         onScroll={onScroll}
       >
