@@ -1,4 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Data Table for ReactJS Applications
+
+Data table component for virtualised data table.
+
+Usage
+
+```JSX
+<Table
+  data={data}
+  columns={columns}
+  height="100px"
+  onRowClick={item => {
+    console.log(item);
+  }}
+  onSelectionChange={selection => {
+    console.log(selection);
+  }}
+/>
+```
+
+## Properties
+
+### data: data array for the data table
+
+sample data
+
+```javascript
+const data = [
+  {
+    albumId: 1,
+    id: 1,
+    thumbnailUrl: "https://via.placeholder.com/150/92c952",
+    title: "accusamus beatae ad facilis cum similique qui sunt",
+    url: "https://via.placeholder.com/600/92c952"
+  }
+];
+```
+
+### columns: column definition in the form of object array
+
+sample columns input
+
+```javascript
+export const column = [
+  {
+    label: "Album Id", // columns header
+    id: "albumId", // id which is used as the cell renderer key
+    width: "100px", // can have px/%/number/ undefined values
+    numeric: true // this will make sure text is aligned right
+  },
+  {
+    label: "Title",
+    id: "title",
+    numeric: false
+  },
+  {
+    label: "Art",
+    renderer: val => <img src={val} />,
+    id: "thumbnailUrl"
+  }
+];
+```
+
+### onRowClick: on row click event
+
+```javascript
+onRowClick={item => {
+    console.log(item);
+  }}
+```
+
+### onSelectionChange: onSelectionChange event 
+
+gives selection details as selected item keys or "All"
+
+```javascript
+onSelectionChange={selection => {
+console.log(selection);
+}}
+```
+
+## Build Pipeline 
+
+CI is implemented with netlify CI, build pipeline runs test before each test and automatically give publish request in netlify portal.
 
 ## Available Scripts
 
